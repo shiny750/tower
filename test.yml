@@ -1,0 +1,7 @@
+---
+- name: "First playbook"
+  hosts: all
+  tasks:
+    - name: "First message"
+      debug:  
+        msg: "Hello..! Welcome..! {{ inventory_hostname }}"
